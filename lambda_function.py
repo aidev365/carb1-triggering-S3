@@ -14,7 +14,7 @@ s3 = boto3.client('s3')
 s3_resource = boto3.resource('s3')
 
 
-destination_bucketname = os.environ['annotated-carb1']
+destination_bucketname = os.environ['recognition']
 
 
 def lambda_handler(event, context):
