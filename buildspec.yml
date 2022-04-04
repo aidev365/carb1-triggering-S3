@@ -9,10 +9,10 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
-      - docker build -t carb1-yolov5 .
-      - docker tag carb1-yolov5:latest 323145895334.dkr.ecr.ap-southeast-1.amazonaws.com/carb1-yolov5:carb1-yolov5 
+      - docker build -t yolov5 .
+      - docker tag yolov5:latest 323145895334.dkr.ecr.ap-southeast-1.amazonaws.com/yolov5:yolov5 
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 323145895334.dkr.ecr.ap-southeast-1.amazonaws.com/carb1-yolov5:carb1-yolov5
+      - docker push 323145895334.dkr.ecr.ap-southeast-1.amazonaws.com/yolov5:yolov5
